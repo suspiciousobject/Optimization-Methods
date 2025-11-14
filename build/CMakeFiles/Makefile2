@@ -54,20 +54,22 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nosferatu/env/labs/methods_of_optimization/course
+CMAKE_SOURCE_DIR = /home/nosferatu/env/labs/coursework/Optimization-Methods
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nosferatu/env/labs/methods_of_optimization/course/build
+CMAKE_BINARY_DIR = /home/nosferatu/env/labs/coursework/Optimization-Methods/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/checker.dir/all
+all: CMakeFiles/solver.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/checker.dir/codegen
+codegen: CMakeFiles/solver.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/checker.dir/clean
+clean: CMakeFiles/solver.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,14 +88,14 @@ clean: CMakeFiles/checker.dir/clean
 CMakeFiles/checker.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles --progress-num=1,2 "Built target checker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles --progress-num=1,2 "Built target checker"
 .PHONY : CMakeFiles/checker.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/checker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/checker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 0
 .PHONY : CMakeFiles/checker.dir/rule
 
 # Convenience name for target.
@@ -102,13 +105,45 @@ checker: CMakeFiles/checker.dir/rule
 # codegen rule for target.
 CMakeFiles/checker.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles --progress-num=1,2 "Finished codegen for target checker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles --progress-num=1,2 "Finished codegen for target checker"
 .PHONY : CMakeFiles/checker.dir/codegen
 
 # clean rule for target.
 CMakeFiles/checker.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/clean
 .PHONY : CMakeFiles/checker.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/solver.dir
+
+# All Build rule for target.
+CMakeFiles/solver.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles --progress-num=3,4 "Built target solver"
+.PHONY : CMakeFiles/solver.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 0
+.PHONY : CMakeFiles/solver.dir/rule
+
+# Convenience name for target.
+solver: CMakeFiles/solver.dir/rule
+.PHONY : solver
+
+# codegen rule for target.
+CMakeFiles/solver.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles --progress-num=3,4 "Finished codegen for target solver"
+.PHONY : CMakeFiles/solver.dir/codegen
+
+# clean rule for target.
+CMakeFiles/solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/clean
+.PHONY : CMakeFiles/solver.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

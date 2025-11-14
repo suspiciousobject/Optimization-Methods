@@ -11,7 +11,11 @@ endif()
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -march=native -flto -DNDEBUG")
 
 add_executable(checker src/checker.cpp)
-
 set_target_properties(checker PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
+
+add_executable(solver src/solver.cpp)
+set_target_properties(solver PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )

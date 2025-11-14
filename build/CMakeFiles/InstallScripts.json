@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/nosferatu/env/labs/methods_of_optimization/course/build/cmake_install.cmake"
+		"/home/nosferatu/env/labs/coursework/Optimization-Methods/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

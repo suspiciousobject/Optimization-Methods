@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nosferatu/env/labs/coursework/Optimization-Methods/src/checker.cpp" "CMakeFiles/checker.dir/src/checker.cpp.o" "gcc" "CMakeFiles/checker.dir/src/checker.cpp.o.d"
-  "" "bin/checker" "gcc" "CMakeFiles/checker.dir/link.d"
+  "/home/nosferatu/env/labs/coursework/Optimization-Methods/src/solver.cpp" "CMakeFiles/solver.dir/src/solver.cpp.o" "gcc" "CMakeFiles/solver.dir/src/solver.cpp.o.d"
+  "" "bin/solver" "gcc" "CMakeFiles/solver.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

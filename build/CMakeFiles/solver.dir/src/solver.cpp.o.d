@@ -1,5 +1,5 @@
-CMakeFiles/checker.dir/src/checker.cpp.o: \
- /home/nosferatu/env/labs/coursework/Optimization-Methods/src/checker.cpp \
+CMakeFiles/solver.dir/src/solver.cpp.o: \
+ /home/nosferatu/env/labs/coursework/Optimization-Methods/src/solver.cpp \
  /usr/include/stdc-predef.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/stdc++.h \
  /usr/include/c++/15.2.1/cassert \

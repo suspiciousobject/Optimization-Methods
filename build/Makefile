@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nosferatu/env/labs/methods_of_optimization/course
+CMAKE_SOURCE_DIR = /home/nosferatu/env/labs/coursework/Optimization-Methods
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nosferatu/env/labs/methods_of_optimization/course/build
+CMAKE_BINARY_DIR = /home/nosferatu/env/labs/coursework/Optimization-Methods/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles /home/nosferatu/env/labs/methods_of_optimization/course/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles /home/nosferatu/env/labs/coursework/Optimization-Methods/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,19 @@ checker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/build
 .PHONY : checker/fast
 
+#=============================================================================
+# Target rules for targets named solver
+
+# Build rule for target.
+solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solver
+.PHONY : solver
+
+# fast build rule for target.
+solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
+.PHONY : solver/fast
+
 src/checker.o: src/checker.cpp.o
 .PHONY : src/checker.o
 
@@ -153,6 +166,30 @@ src/checker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/src/checker.cpp.s
 .PHONY : src/checker.cpp.s
 
+src/solver.o: src/solver.cpp.o
+.PHONY : src/solver.o
+
+# target to build an object file
+src/solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/src/solver.cpp.o
+.PHONY : src/solver.cpp.o
+
+src/solver.i: src/solver.cpp.i
+.PHONY : src/solver.i
+
+# target to preprocess a source file
+src/solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/src/solver.cpp.i
+.PHONY : src/solver.cpp.i
+
+src/solver.s: src/solver.cpp.s
+.PHONY : src/solver.s
+
+# target to generate assembly for a file
+src/solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/src/solver.cpp.s
+.PHONY : src/solver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... checker"
+	@echo "... solver"
 	@echo "... src/checker.o"
 	@echo "... src/checker.i"
 	@echo "... src/checker.s"
+	@echo "... src/solver.o"
+	@echo "... src/solver.i"
+	@echo "... src/solver.s"
 .PHONY : help
 
 

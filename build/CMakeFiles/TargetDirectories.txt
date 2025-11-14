@@ -1,3 +1,0 @@
-/home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles/checker.dir
-/home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles/edit_cache.dir
-/home/nosferatu/env/labs/methods_of_optimization/course/build/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -march=native -flto -DNDEBUG -Wl,--dependency-file=CMakeFiles/checker.dir/link.d CMakeFiles/checker.dir/src/checker.cpp.o -o checker

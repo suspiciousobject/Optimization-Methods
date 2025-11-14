@@ -1,0 +1,13 @@
+BIRDS_3.txt: OK
+BIRDS_4.txt: OK
+BIRDS_5.txt: OK
+BIRDS_6.txt: OK
+BIRDS_7.txt: OK
+BIRDS_8.txt: BAD
+BIRDS_9.txt: BAD
+BIRDS_10.txt: BAD
+BIRDS_11.txt: OK
+BIRDS_12.txt: BAD
+BIRDS_13.txt: OK
+
+Processing time: 25 ms

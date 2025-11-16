@@ -1,8 +1,10 @@
 // ../src/checker.cpp
 
 #include <bits/stdc++.h>
+#include <spdlog/spdlog.h>
+#include <spdlog/sinks/basic_file_sink.h>
 
-inline std::string parseLineToCol(const std::string& line) {
+inline std::string extractColumn(const std::string& line) {
     std::string col;
     for (char c : line) {
         if (c == ' ' || c == '\t') continue;
@@ -12,89 +14,157 @@ inline std::string parseLineToCol(const std::string& line) {
     return col;
 }
 
-bool isSolvable(const std::vector<std::string>& cols, int N) {
-    if (N <= 0) return false;
-    int cnt[26] = {0};
+struct ValidationResult {
+    enum class Status {
+        SOLVABLE,
+        UNSOLVABLE,
+        INVALID
+    };
 
-    for (const auto& col : cols) {
-        if (col.empty()) continue;
-        if ((int)col.size() != N) return false;
+    Status status;
+    std::string reason;
+    int N = 0;
+    int column_count = 0;
+};
+
+ValidationResult analyzeFile(const std::string& filepath) {
+    std::ifstream file(filepath);
+    if (!file.is_open()) {
+        return {ValidationResult::Status::INVALID, "File could not be opened."};
+    }
+
+    std::vector<std::string> columns;
+    std::string line;
+    bool parsing_data = false;
+
+    while (std::getline(file, line)) {
+        if (line.find("DATA") != std::string::npos) {
+            parsing_data = true;
+            continue;
+        }
+        if (!parsing_data) continue;
+
+        if (line.find("/") != std::string::npos || line.find("ORDER") != std::string::npos) {
+            break;
+        }
+
+        if (line.find("==") != std::string::npos) {
+            columns.emplace_back("");
+        } else {
+            std::string col = extractColumn(line);
+            if (!col.empty()) {
+                columns.push_back(std::move(col));
+            }
+        }
+    }
+
+    if (columns.empty()) {
+        return {ValidationResult::Status::INVALID, "No columns found after DATA section."};
+    }
+
+    int N = 0;
+    for (const auto& col : columns) {
+        if (!col.empty()) {
+            N = static_cast<int>(col.size());
+            break;
+        }
+    }
+
+    if (N <= 0) {
+        return {ValidationResult::Status::INVALID, "Column height N must be positive."};
+    }
+
+    for (const auto& col : columns) {
+        if (!col.empty() && static_cast<int>(col.size()) != N) {
+            return {
+                ValidationResult::Status::INVALID,
+                "Column height mismatch: expected " + std::to_string(N) +
+                ", found column of size " + std::to_string(col.size()) + "."
+            };
+        }
+    }
+
+    std::array<int, 26> freq{};
+    for (const auto& col : columns) {
         for (char c : col) {
             if (c >= 'A' && c <= 'Z') {
-                ++cnt[c - 'A'];
+                freq[c - 'A']++;
             }
         }
     }
 
     for (int i = 0; i < 26; ++i) {
-        if (cnt[i] > 0 && cnt[i] % N != 0) return false;
-    }
-    return true;
-}
-
-std::vector<std::string> parseFile(const std::string& filename) {
-    std::ifstream f(filename, std::ios::in);
-    std::vector<std::string> cols;
-    std::string line;
-    bool inData = false;
-
-    while (getline(f, line)) {
-        if (line.find("DATA") != std::string::npos) {
-            inData = true;
-            continue;
-        }
-        if (!inData) continue;
-
-        if (line.find("/") != std::string::npos) break;
-
-        if (line.find("ORDER") != std::string::npos) break;
-
-        if (line.find("==") != std::string::npos) {
-            cols.emplace_back("");
-        } else {
-            std::string col = parseLineToCol(line);
-            if (!col.empty()) cols.emplace_back(std::move(col));
+        if (freq[i] > 0 && freq[i] % N != 0) {
+            char letter = static_cast<char>('A' + i);
+            return {
+                ValidationResult::Status::UNSOLVABLE,
+                "Letter '" + std::string(1, letter) + "' appears " + std::to_string(freq[i]) +
+                " times, which is not divisible by N=" + std::to_string(N) + "."
+            };
         }
     }
-    return cols;
-}
 
-int getN(const std::vector<std::string>& cols) {
-    for (const auto& col : cols)
-        if (!col.empty()) return col.size();
-    return 0;
+    return {
+        ValidationResult::Status::SOLVABLE,
+        "All constraints satisfied.",
+        N,
+        static_cast<int>(columns.size())
+    };
 }
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(nullptr);
+    auto logger = spdlog::basic_logger_mt("solver_checker", "../../data/checker_result/log_latest.log");
+    spdlog::set_default_logger(logger);
+    spdlog::set_pattern("[%Y-%m-%d %H:%M:%S.%e] [%l] %v");
+    spdlog::set_level(spdlog::level::info);
 
-    const std::vector<std::string> files = {
-        "../data/BIRDS_3.txt", "../data/BIRDS_4.txt", "../data/BIRDS_5.txt", "../data/BIRDS_6.txt", "../data/BIRDS_7.txt",
-        "../data/BIRDS_8.txt", "../data/BIRDS_9.txt", "../data/BIRDS_10.txt", "../data/BIRDS_11.txt", "../data/BIRDS_12.txt",
-        "../data/BIRDS_13.txt"
+    spdlog::info("Checker execution started.");
+    spdlog::info("Evaluating solvability of input instances.");
+    spdlog::info("");
+
+    const std::vector<std::string> input_files = {
+        "../../data/BIRDS_3.txt", "../../data/BIRDS_4.txt", "../../data/BIRDS_5.txt",
+        "../../data/BIRDS_6.txt", "../../data/BIRDS_7.txt", "../../data/BIRDS_8.txt",
+        "../../data/BIRDS_9.txt", "../../data/BIRDS_10.txt", "../../data/BIRDS_11.txt",
+        "../../data/BIRDS_12.txt", "../../data/BIRDS_13.txt"
     };
 
-    std::ofstream log("../data/checker_result/log_latest.txt");
-    auto start = std::chrono::high_resolution_clock::now();
+    auto start_time = std::chrono::high_resolution_clock::now();
 
-    for (const std::string& file : files) {
-        auto cols = parseFile(file);
-        if (cols.empty()) {
-            log << file << ": BAD (parse error)\n";
-            continue;
+    for (const auto& path : input_files) {
+        spdlog::info("Processing file: {}", path);
+
+        ValidationResult result = analyzeFile(path);
+
+        switch (result.status) {
+            case ValidationResult::Status::SOLVABLE:
+                spdlog::info("  Status: Solvable");
+                spdlog::info("  Column height (N): {}", result.N);
+                spdlog::info("  Columns processed: {}", result.column_count);
+                spdlog::info("  Result: VALID");
+                break;
+
+            case ValidationResult::Status::UNSOLVABLE:
+                spdlog::error("  Status: Unsolvable");
+                spdlog::error("  Reason: {}", result.reason);
+                break;
+
+            case ValidationResult::Status::INVALID:
+                spdlog::error("  Status: Invalid input");
+                spdlog::error("  Reason: {}", result.reason);
+                break;
         }
 
-        int N = getN(cols);
-        bool ok = isSolvable(cols, N);
-        log << file << ": " << (ok ? "OK" : "BAD") << '\n';
+        spdlog::info("");
     }
 
-    auto end = std::chrono::high_resolution_clock::now();
-    auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-    log << "\nProcessing time: " << ms << " ms\n";
-    log.close();
+    auto end_time = std::chrono::high_resolution_clock::now();
+    auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
 
-    std::cout << "Анализ файлов завершён. Результат сохранён в ../data/checker_result/log_latest.txt\n";
+
+    spdlog::info("Execution finished. Total time: {} ms", duration_ms);
+
+    spdlog::shutdown();
+    std::cout << "Log saved to ../../data/checker_result/log_latest.log\n";
     return 0;
 }

@@ -154,13 +154,9 @@ CMakeFiles/solver.dir/src/solver.cpp.o: /home/nosferatu/env/labs/coursework/Opti
   /usr/include/c++/15.2.1/bits/stl_iterator.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_multiset.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
   /usr/include/c++/15.2.1/bits/stl_queue.h \
-  /usr/include/c++/15.2.1/bits/stl_set.h \
-  /usr/include/c++/15.2.1/bits/stl_stack.h \
   /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_tree.h \
   /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.2.1/bits/stl_vector.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
@@ -216,9 +212,7 @@ CMakeFiles/solver.dir/src/solver.cpp.o: /home/nosferatu/env/labs/coursework/Opti
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
   /usr/include/c++/15.2.1/queue \
   /usr/include/c++/15.2.1/ratio \
-  /usr/include/c++/15.2.1/set \
   /usr/include/c++/15.2.1/sstream \
-  /usr/include/c++/15.2.1/stack \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/streambuf \
   /usr/include/c++/15.2.1/string \
@@ -337,16 +331,6 @@ bin/solver: /usr/lib/Scrt1.o \
 
 /usr/include/stdlib.h:
 
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/lib/libstdc++.so:
-
-/usr/include/locale.h:
-
-/usr/include/linux/stddef.h:
-
 /usr/include/c++/15.2.1/bits/nested_exception.h:
 
 /usr/include/c++/15.2.1/bits/memoryfwd.h:
@@ -443,12 +427,6 @@ bin/solver: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/bits/char_traits.h:
 
-/usr/include/c++/15.2.1/bits/stl_stack.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/15.2.1/bits/stl_tempbuf.h:
-
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/c++/15.2.1/ext/atomicity.h:
@@ -488,8 +466,6 @@ bin/solver: /usr/lib/Scrt1.o \
 /usr/include/bits/types/locale_t.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/15.2.1/stack:
 
 /usr/include/gnu/stubs.h:
 
@@ -567,6 +543,10 @@ bin/solver: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/bits/locale_classes.tcc:
 
+/usr/include/c++/15.2.1/bits/stl_tempbuf.h:
+
+/usr/include/stdc-predef.h:
+
 /usr/include/c++/15.2.1/bits/locale_classes.h:
 
 /usr/include/alloca.h:
@@ -586,8 +566,6 @@ bin/solver: /usr/lib/Scrt1.o \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
 
 /usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/15.2.1/bits/stl_set.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -638,12 +616,6 @@ bin/solver: /usr/lib/Scrt1.o \
 /usr/include/bits/stdlib-bsearch.h:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/15.2.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/15.2.1/bits/stl_algo.h:
 
 /usr/include/c++/15.2.1/ios:
 
@@ -737,8 +709,6 @@ bin/solver: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/15.2.1/bits/stl_multiset.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/c++/15.2.1/bits/stl_vector.h:
@@ -751,8 +721,6 @@ bin/solver: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/exception:
 
-/usr/include/c++/15.2.1/bits/stl_tree.h:
-
 /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/15.2.1/tuple:
@@ -764,6 +732,10 @@ bin/solver: /usr/lib/Scrt1.o \
 /usr/include/bits/typesizes.h:
 
 /usr/include/c++/15.2.1/bits/string_view.tcc:
+
+/usr/lib/libstdc++.so:
+
+/usr/include/locale.h:
 
 /usr/include/c++/15.2.1/cwchar:
 
@@ -839,10 +811,6 @@ bin/solver: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/ratio:
 
-/usr/include/c++/15.2.1/set:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
-
 /usr/include/c++/15.2.1/sstream:
 
 /usr/include/c++/15.2.1/string:
@@ -856,6 +824,8 @@ bin/solver: /usr/lib/Scrt1.o \
 /usr/include/c++/15.2.1/typeinfo:
 
 /usr/include/c++/15.2.1/unordered_set:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -888,3 +858,15 @@ CMakeFiles/solver.dir/src/solver.cpp.o:
 /usr/include/linux/limits.h:
 
 /usr/include/linux/sched/types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/15.2.1/bits/stl_uninitialized.h:
+
+/usr/include/c++/15.2.1/bits/stl_algo.h:
+
+/usr/include/pthread.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:

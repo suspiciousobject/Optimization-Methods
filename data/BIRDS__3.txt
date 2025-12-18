@@ -1,0 +1,23 @@
+DATA
+R R G G
+B B Y Y
+R R G G
+B B Y Y
+==
+==
+/
+
+ORDER
+1 5 G
+1 5 G
+2 6 Y
+2 6 Y
+3 5 G
+3 5 G
+4 6 Y
+4 6 Y
+3 1 R
+3 1 R
+4 2 B
+4 2 B
+/

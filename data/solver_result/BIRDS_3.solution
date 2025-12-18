@@ -1,0 +1,309 @@
+DATA
+E G C C C G D B E B F F F A
+C E E A E A D D G G F E G E
+C C G B E F E G D E C B B E
+F D B F B F C G E D G E D F
+D E B F D D C A G G E C D A
+C A A F E A E C C A A A D D
+F B G B C C D C E G A B B D
+D G C D D E B A B D B D B G
+C F G B D F A C C D E A E C
+B D A G D A B E A B C F G G
+G C E G F G A F A C D B E D
+F E G G F E F G C D A B F A
+F B A F A B D E B F F G A E
+C B G C A A C B G B F F F A
+==
+==
+==
+/
+
+ORDER
+1 17 A
+14 17 A
+12 17 A
+5 17 A
+7 16 D
+6 16 D
+6 16 D
+14 15 F
+14 15 F
+14 15 F
+1 15 F
+1 15 F
+1 15 F
+11 16 D
+4 15 F
+4 16 D
+12 15 F
+12 14 B
+12 17 A
+12 16 D
+13 4 E
+13 17 A
+6 17 A
+6 17 A
+6 17 A
+12 6 C
+13 12 G
+13 15 F
+13 15 F
+11 4 E
+11 13 B
+11 16 D
+11 6 C
+11 17 A
+11 15 F
+11 17 A
+11 12 G
+11 15 F
+8 11 G
+8 13 B
+8 16 D
+8 13 B
+8 16 D
+8 14 B
+8 17 A
+10 11 G
+10 12 G
+10 15 F
+10 6 C
+10 14 B
+5 16 D
+10 17 A
+5 6 C
+10 5 E
+10 13 B
+10 17 A
+8 13 B
+8 5 E
+8 16 D
+8 16 D
+8 6 C
+8 11 G
+10 16 D
+8 16 D
+10 8 G
+12 8 G
+12 8 G
+12 8 G
+12 8 G
+12 15 F
+2 12 E
+2 8 G
+11 8 G
+11 8 G
+11 8 G
+11 8 G
+1 14 B
+1 12 E
+1 7 B
+5 12 E
+5 12 E
+5 2 E
+5 8 G
+5 8 G
+10 5 A
+1 10 D
+1 8 G
+11 2 E
+11 1 C
+11 8 G
+10 11 D
+10 11 D
+7 10 B
+7 10 B
+7 10 B
+13 10 B
+13 10 B
+13 10 B
+13 10 B
+13 10 B
+14 10 B
+14 10 B
+14 10 B
+14 10 B
+13 10 B
+13 12 E
+13 11 D
+13 14 B
+5 7 A
+5 7 A
+5 1 C
+5 11 D
+5 11 D
+13 7 A
+5 13 F
+5 14 B
+5 12 E
+5 11 D
+12 5 E
+12 5 E
+12 5 E
+12 5 E
+12 5 E
+12 5 E
+12 5 E
+4 5 E
+4 5 E
+4 5 E
+12 13 F
+4 12 G
+4 11 D
+4 5 E
+2 5 E
+2 5 E
+2 5 E
+2 13 F
+2 12 G
+2 12 G
+2 11 D
+4 12 G
+4 1 C
+4 13 F
+4 14 B
+4 13 F
+4 14 B
+4 11 D
+4 13 F
+6 4 C
+6 4 C
+6 4 C
+6 4 C
+6 4 C
+6 4 C
+6 4 C
+1 4 C
+1 4 C
+1 4 C
+1 4 C
+1 4 C
+1 4 C
+9 4 C
+1 12 G
+6 1 E
+2 11 D
+2 6 A
+2 1 E
+2 6 A
+2 1 E
+2 1 E
+9 1 E
+9 6 A
+9 1 E
+9 11 D
+2 9 C
+6 2 A
+6 2 A
+6 2 A
+6 2 A
+6 1 E
+6 13 F
+6 2 A
+6 2 A
+7 2 A
+7 2 A
+7 2 A
+7 2 A
+7 12 G
+7 1 E
+7 6 C
+7 11 D
+7 6 C
+7 6 C
+3 1 E
+3 7 B
+3 7 B
+3 6 C
+9 6 C
+9 6 C
+9 6 C
+9 2 A
+9 13 F
+9 11 D
+3 1 E
+3 11 D
+9 7 B
+9 12 G
+9 13 F
+9 6 C
+3 9 G
+12 9 G
+12 9 G
+12 9 G
+12 9 G
+12 9 G
+12 9 G
+12 9 G
+12 9 G
+12 9 G
+12 1 E
+3 1 E
+3 12 F
+3 1 E
+3 7 B
+3 9 G
+3 6 C
+3 6 C
+14 3 B
+14 3 B
+14 3 B
+14 3 B
+14 3 B
+14 9 G
+14 3 B
+14 6 C
+14 2 A
+14 2 A
+14 6 C
+14 9 G
+14 3 B
+14 6 C
+7 3 B
+7 3 B
+7 3 B
+7 3 B
+7 3 B
+7 9 G
+7 3 B
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 12 F
+13 2 A
+13 3 B
+13 12 F
+7 12 F
+/
+
+Финальное состояние:
+1: E E E E E E E E E E E E E E  ✓
+2: A A A A A A A A A A A A A A  ✓
+3: B B B B B B B B B B B B B B  ✓
+4: C C C C C C C C C C C C C C  ✓
+5: E E E E E E E E E E E E E E  ✓
+6: C C C C C C C C C C C C C C  ✓
+7: ==
+8: G G G G G G G G G G G G G G  ✓
+9: G G G G G G G G G G G G G G  ✓
+10: B B B B B B B B B B B B B B  ✓
+11: D D D D D D D D D D D D D D  ✓
+12: F F F F F F F F F F F F F F  ✓
+13: ==
+14: ==
+15: F F F F F F F F F F F F F F  ✓
+16: D D D D D D D D D D D D D D  ✓
+17: A A A A A A A A A A A A A A  ✓
+
+Целевая функция: F = 100 * N * L - K
+N = 14, L = 14, K = 261
+F = 19339
+
+✅ РЕШЕНИЕ КОРРЕКТНОЕ!
+Все 14 колонок собраны

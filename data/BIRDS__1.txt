@@ -1,0 +1,18 @@
+DATA
+R B G
+R B G
+R B G
+==
+==
+/
+
+ORDER
+1 4 B
+2 4 B
+3 4 B
+1 5 G
+2 5 G
+3 5 G
+2 1 R
+3 1 R
+/

@@ -1,0 +1,47 @@
+[2025-12-18 04:24:57.842] [info] Universal Solver execution started.
+[2025-12-18 04:24:57.842] [info] 
+[2025-12-18 04:24:57.842] [info]   Status: Reading input data...
+[2025-12-18 04:24:57.842] [info]   Status: Input validated successfully
+[2025-12-18 04:24:57.842] [info]   Column height (N): 14
+[2025-12-18 04:24:57.842] [info]   Columns in input: 17
+[2025-12-18 04:24:57.842] [info]   Bird types: 7
+[2025-12-18 04:24:57.842] [info]   Total birds: 196
+[2025-12-18 04:24:57.842] [info]   Required stacks (L): 14
+[2025-12-18 04:24:57.842] [info] 
+[2025-12-18 04:24:57.842] [info] Starting solution search...
+[2025-12-18 04:24:57.842] [info] Starting Beam Search for input.txt
+[2025-12-18 04:24:57.842] [info] Problem size: 196 birds, N=14
+[2025-12-18 04:24:57.842] [info] Beam width: 200
+[2025-12-18 04:24:58.021] [debug] Iteration 10, best h=1075, depth=9, solution=-, visited=28106, time=158 ms
+[2025-12-18 04:24:58.204] [debug] Iteration 20, best h=825, depth=19, solution=-, visited=55815, time=342 ms
+[2025-12-18 04:24:58.390] [debug] Iteration 30, best h=625, depth=29, solution=-, visited=82893, time=529 ms
+[2025-12-18 04:24:58.574] [debug] Iteration 40, best h=425, depth=39, solution=-, visited=108901, time=714 ms
+[2025-12-18 04:24:58.794] [debug] Iteration 50, best h=270, depth=49, solution=-, visited=134871, time=925 ms
+[2025-12-18 04:24:59.053] [debug] Iteration 60, best h=-195, depth=59, solution=-, visited=162677, time=1188 ms
+[2025-12-18 04:24:59.276] [debug] Iteration 70, best h=-710, depth=69, solution=-, visited=186532, time=1407 ms
+[2025-12-18 04:24:59.482] [debug] Iteration 80, best h=-1190, depth=79, solution=-, visited=207961, time=1622 ms
+[2025-12-18 04:24:59.649] [debug] Iteration 90, best h=-1365, depth=89, solution=-, visited=225327, time=1786 ms
+[2025-12-18 04:24:59.821] [debug] Iteration 100, best h=-1890, depth=99, solution=-, visited=243058, time=1962 ms
+[2025-12-18 04:25:00.000] [debug] Iteration 110, best h=-2375, depth=109, solution=-, visited=262502, time=2139 ms
+[2025-12-18 04:25:00.175] [debug] Iteration 120, best h=-2520, depth=119, solution=-, visited=281859, time=2317 ms
+[2025-12-18 04:25:00.316] [debug] Iteration 130, best h=-2720, depth=129, solution=-, visited=298126, time=2460 ms
+[2025-12-18 04:25:00.464] [debug] Iteration 140, best h=-3220, depth=139, solution=-, visited=316069, time=2607 ms
+[2025-12-18 04:25:00.598] [debug] Iteration 150, best h=-3380, depth=149, solution=-, visited=333347, time=2743 ms
+[2025-12-18 04:25:00.719] [debug] Iteration 160, best h=-3560, depth=159, solution=-, visited=349770, time=2864 ms
+[2025-12-18 04:25:00.850] [debug] Iteration 170, best h=-4120, depth=169, solution=-, visited=368021, time=2995 ms
+[2025-12-18 04:25:00.970] [debug] Iteration 180, best h=-4320, depth=179, solution=-, visited=386451, time=3116 ms
+[2025-12-18 04:25:01.098] [debug] Iteration 190, best h=-4555, depth=189, solution=-, visited=406136, time=3242 ms
+[2025-12-18 04:25:01.228] [debug] Iteration 200, best h=-4785, depth=199, solution=-, visited=426588, time=3372 ms
+[2025-12-18 04:25:01.349] [debug] Iteration 210, best h=-5310, depth=209, solution=-, visited=446185, time=3495 ms
+[2025-12-18 04:25:01.460] [debug] Iteration 220, best h=-5530, depth=219, solution=-, visited=464416, time=3607 ms
+[2025-12-18 04:25:01.560] [debug] Iteration 230, best h=-6105, depth=229, solution=-, visited=481096, time=3708 ms
+[2025-12-18 04:25:01.658] [debug] Iteration 240, best h=-6350, depth=239, solution=-, visited=497552, time=3805 ms
+[2025-12-18 04:25:01.754] [debug] Iteration 250, best h=-7210, depth=249, solution=-, visited=513479, time=3900 ms
+[2025-12-18 04:25:01.842] [debug] Iteration 260, best h=-8085, depth=259, solution=-, visited=527943, time=3991 ms
+[2025-12-18 04:25:01.858] [info] Found solution with 261 moves
+[2025-12-18 04:25:01.925] [info]   Status: Solution sequence generated
+[2025-12-18 04:25:01.925] [info]   Moves generated: 261
+[2025-12-18 04:25:01.925] [info]   Search time: 4083 ms
+[2025-12-18 04:25:01.926] [info] 
+[2025-12-18 04:25:01.926] [info] Execution finished.
+[2025-12-18 04:25:01.926] [info] Total execution time: 4084 ms

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/nosferatu/env/labs/coursework/Optimization-Methods/include
 
 CXX_FLAGS = -O3 -march=native -flto -std=gnu++17
 

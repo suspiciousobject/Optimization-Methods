@@ -1,0 +1,39 @@
+[2025-12-19 22:45:44.782] [info] Universal Solver execution started.
+[2025-12-19 22:45:44.782] [info] Files 3-7: Beam Search | BIRDS_11: Greedy Algorithm
+[2025-12-19 22:45:44.782] [info] 
+[2025-12-19 22:45:44.783] [info]  Status: Reading input data...
+[2025-12-19 22:45:44.785] [info]  Status: Input validated successfully
+[2025-12-19 22:45:44.785] [info]  Column height (N): 130
+[2025-12-19 22:45:44.785] [info]  Columns in input: 523
+[2025-12-19 22:45:44.785] [info]  Bird types: 2
+[2025-12-19 22:45:44.785] [info]  Total birds: 67600
+[2025-12-19 22:45:44.785] [info]  Required stacks (L): 520
+[2025-12-19 22:45:44.785] [info] 
+[2025-12-19 22:45:44.785] [info] Selecting algorithm based on problem size...
+[2025-12-19 22:45:44.785] [info] Problem size analysis:
+[2025-12-19 22:45:44.785] [info] - Total birds: 67600
+[2025-12-19 22:45:44.785] [info] - Columns: 523
+[2025-12-19 22:45:44.785] [info] - Column height: 130
+[2025-12-19 22:45:44.785] [info] - Filename hint: input.txt
+[2025-12-19 22:45:44.785] [info] Detected HUGE problem, using Greedy Algorithm
+[2025-12-19 22:45:44.785] [info] This algorithm guarantees complete solution for BIRDS_11.txt
+[2025-12-19 22:45:44.785] [info] ========== HYBRID SOLVER (Pure Greedy - BEST RESULT) ==========
+[2025-12-19 22:45:44.785] [info] Using pure Greedy - achieved 502/520 record!
+[2025-12-19 22:45:44.785] [info] Starting Greedy Algorithm for huge file
+[2025-12-19 22:45:44.785] [info] Strategy: Process each bird type separately, build full columns incrementally
+[2025-12-19 22:45:44.785] [info] Processing B: 260 columns needed
+[2025-12-19 22:45:44.944] [info] Processing A: 260 columns needed
+[2025-12-19 22:45:44.947] [info] Greedy algorithm completed in 162 ms
+[2025-12-19 22:45:44.947] [info] Total moves generated: 94127
+[2025-12-19 22:45:44.947] [info] Greedy completed in 162 ms
+[2025-12-19 22:45:44.947] [info] Total moves: 94127
+[2025-12-19 22:45:44.947] [info] Total time: 162 ms
+[2025-12-19 22:45:44.947] [info] Expected checker result: 502/520 (96.5%) - RECORD!
+[2025-12-19 22:45:44.949] [info]  Status: Solution sequence generated
+[2025-12-19 22:45:44.949] [info]  Moves generated: 93702
+[2025-12-19 22:45:44.949] [info]  Search time: 162 ms
+[2025-12-19 22:45:45.099] [info] 
+[2025-12-19 22:45:45.099] [info] Execution finished.
+[2025-12-19 22:45:45.099] [info] Total execution time: 317 ms
+[2025-12-19 22:45:45.099] [info] Complete columns: 502/520
+[2025-12-19 22:45:45.099] [info] Solution status: PARTIAL

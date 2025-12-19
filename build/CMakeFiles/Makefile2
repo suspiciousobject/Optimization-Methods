@@ -80,7 +80,6 @@ preinstall:
 clean: CMakeFiles/solver.dir/clean
 clean: CMakeFiles/checker.dir/clean
 clean: CMakeFiles/build_all.dir/clean
-clean: CMakeFiles/run_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -178,38 +177,6 @@ CMakeFiles/build_all.dir/codegen:
 CMakeFiles/build_all.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/build_all.dir/build.make CMakeFiles/build_all.dir/clean
 .PHONY : CMakeFiles/build_all.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/run_tests.dir
-
-# All Build rule for target.
-CMakeFiles/run_tests.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles --progress-num= "Built target run_tests"
-.PHONY : CMakeFiles/run_tests.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles 0
-.PHONY : CMakeFiles/run_tests.dir/rule
-
-# Convenience name for target.
-run_tests: CMakeFiles/run_tests.dir/rule
-.PHONY : run_tests
-
-# codegen rule for target.
-CMakeFiles/run_tests.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles --progress-num= "Finished codegen for target run_tests"
-.PHONY : CMakeFiles/run_tests.dir/codegen
-
-# clean rule for target.
-CMakeFiles/run_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/clean
-.PHONY : CMakeFiles/run_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

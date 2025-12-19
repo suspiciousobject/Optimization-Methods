@@ -1,6 +1,5 @@
 /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles/solver.dir
 /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles/checker.dir
 /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles/build_all.dir
-/home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles/run_tests.dir
 /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles/edit_cache.dir
 /home/nosferatu/env/labs/coursework/Optimization-Methods/build/CMakeFiles/rebuild_cache.dir

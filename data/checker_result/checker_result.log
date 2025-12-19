@@ -2,15 +2,15 @@
 [2025-11-16 03:27:04.468] [info] 
 [2025-11-16 03:27:04.469] [info] Starting Strict ORDER Check
 [2025-11-16 03:27:04.470] [info] 
-[2025-11-16 03:27:04.471] [info] Processing file: ../data/BIRDS__1.txt
+[2025-11-16 03:27:04.471] [info] Processing file: ../../data/BIRDS__1.txt
 [2025-11-16 03:27:04.472] [error]   Status: Invalid Move Sequence
 [2025-11-16 03:27:04.473] [error]   Reason: Move #1 (1 -> 4 B) violates rule 4. The top bird in column 1 is 'G', not 'B'.
 [2025-11-16 03:27:04.474] [info] 
-[2025-11-16 03:27:04.475] [info] Processing file: ../data/BIRDS__2.txt
+[2025-11-16 03:27:04.475] [info] Processing file: ../../data/BIRDS__2.txt
 [2025-11-16 03:27:04.476] [error]   Status: Invalid Move Sequence
 [2025-11-16 03:27:04.477] [error]   Reason: Move #12 (4 -> 2 G) violates rule 6. Target column 2 is already full (N=4).
 [2025-11-16 03:27:04.478] [info] 
-[2025-11-16 03:27:04.479] [info] Processing file: ../data/BIRDS__3.txt
+[2025-11-16 03:27:04.479] [info] Processing file: ../../data/BIRDS__3.txt
 [2025-11-16 03:27:04.480] [info]   Status: Valid Solution Found
 [2025-11-16 03:27:04.481] [info]   Column height (N): 4
 [2025-11-16 03:27:04.482] [info]   Columns processed: 6
@@ -19,7 +19,7 @@
 [2025-11-16 03:27:04.485] [info]   Target Function (F): 1588
 [2025-11-16 03:27:04.486] [info]   Result: VALID
 [2025-11-16 03:27:04.487] [info] 
-[2025-11-16 03:27:04.488] [info] Processing file: ../data/BIRDS__5.txt
+[2025-11-16 03:27:04.488] [info] Processing file: ../../data/BIRDS__5.txt
 [2025-11-16 03:27:04.489] [info]   Status: Valid Solution Found
 [2025-11-16 03:27:04.490] [info]   Column height (N): 8
 [2025-11-16 03:27:04.491] [info]   Columns processed: 11
@@ -28,7 +28,7 @@
 [2025-11-16 03:27:04.494] [info]   Target Function (F): 6336
 [2025-11-16 03:27:04.495] [info]   Result: VALID
 [2025-11-16 03:27:04.496] [info] 
-[2025-11-16 03:27:04.497] [info] Processing file: ../data/BIRDS__6.txt
+[2025-11-16 03:27:04.497] [info] Processing file: ../../data/BIRDS__6.txt
 [2025-11-16 03:27:04.498] [info]   Status: Valid Solution Found
 [2025-11-16 03:27:04.499] [info]   Column height (N): 10
 [2025-11-16 03:27:04.500] [info]   Columns processed: 13
@@ -37,65 +37,69 @@
 [2025-11-16 03:27:04.503] [info]   Target Function (F): 9895
 [2025-11-16 03:27:04.504] [info]   Result: VALID
 [2025-11-16 03:27:04.505] [info] 
-[2025-11-16 03:27:04.506] [info] 
-[2025-11-16 03:27:04.507] [info] Starting Solvability Check (BIRDS_3.txt to BIRDS_13.txt)
-[2025-11-16 03:27:04.508] [info] 
-[2025-11-16 03:27:04.509] [info] Processing file: ../data/BIRDS_3.txt
-[2025-11-16 03:27:04.510] [info]   Status: Solvable
-[2025-11-16 03:27:04.511] [info]   Column height (N): 6
-[2025-11-16 03:27:04.512] [info]   Columns processed: 9
-[2025-11-16 03:27:04.513] [info]   Result: VALID
-[2025-11-16 03:27:04.514] [info] 
-[2025-11-16 03:27:04.515] [info] Processing file: ../data/BIRDS_4.txt
-[2025-11-16 03:27:04.516] [info]   Status: Solvable
-[2025-11-16 03:27:04.517] [info]   Column height (N): 8
-[2025-11-16 03:27:04.518] [info]   Columns processed: 11
-[2025-11-16 03:27:04.519] [info]   Result: VALID
-[2025-11-16 03:27:04.520] [info] 
-[2025-11-16 03:27:04.521] [info] Processing file: ../data/BIRDS_5.txt
-[2025-11-16 03:27:04.522] [info]   Status: Solvable
-[2025-11-16 03:27:04.523] [info]   Column height (N): 10
-[2025-11-16 03:27:04.524] [info]   Columns processed: 13
-[2025-11-16 03:27:04.525] [info]   Result: VALID
-[2025-11-16 03:27:04.526] [info] 
-[2025-11-16 03:27:04.527] [info] Processing file: ../data/BIRDS_6.txt
-[2025-11-16 03:27:04.528] [info]   Status: Solvable
-[2025-11-16 03:27:04.529] [info]   Column height (N): 12
-[2025-11-16 03:27:04.530] [info]   Columns processed: 15
-[2025-11-16 03:27:04.531] [info]   Result: VALID
-[2025-11-16 03:27:04.532] [info] 
-[2025-11-16 03:27:04.533] [info] Processing file: ../data/BIRDS_7.txt
-[2025-11-16 03:27:04.534] [info]   Status: Solvable
-[2025-11-16 03:27:04.535] [info]   Column height (N): 14
-[2025-11-16 03:27:04.536] [info]   Columns processed: 17
-[2025-11-16 03:27:04.537] [info]   Result: VALID
-[2025-11-16 03:27:04.538] [info] 
-[2025-11-16 03:27:04.539] [info] Processing file: ../data/BIRDS_8.txt
-[2025-11-16 03:27:04.540] [error]   Status: Unsolvable
-[2025-11-16 03:27:04.541] [error]   Reason: Letter 'C' appears 25 times, which is not divisible by N=12.
+[2025-11-16 03:27:04.506] [info] Processing file: ../../data/BIRDS_LARGE.txt
+[2025-11-16 03:27:04.507] [error]   Status: Invalid Move Sequence
+[2025-11-16 03:27:04.508] [error]   Reason: Move #800 (361 -> 138 B) violates rule 5. Target column 138's top bird ('A') does not match 'B'.
+[2025-11-16 03:27:04.509] [info] 
+[2025-11-16 03:27:04.510] [info] 
+[2025-11-16 03:27:04.511] [info] Starting Solvability Check (BIRDS_3.txt to BIRDS_13.txt)
+[2025-11-16 03:27:04.512] [info] 
+[2025-11-16 03:27:04.513] [info] Processing file: ../../data/BIRDS_3.txt
+[2025-11-16 03:27:04.514] [info]   Status: Solvable
+[2025-11-16 03:27:04.515] [info]   Column height (N): 6
+[2025-11-16 03:27:04.516] [info]   Columns processed: 9
+[2025-11-16 03:27:04.517] [info]   Result: VALID
+[2025-11-16 03:27:04.518] [info] 
+[2025-11-16 03:27:04.519] [info] Processing file: ../../data/BIRDS_4.txt
+[2025-11-16 03:27:04.520] [info]   Status: Solvable
+[2025-11-16 03:27:04.521] [info]   Column height (N): 8
+[2025-11-16 03:27:04.522] [info]   Columns processed: 11
+[2025-11-16 03:27:04.523] [info]   Result: VALID
+[2025-11-16 03:27:04.524] [info] 
+[2025-11-16 03:27:04.525] [info] Processing file: ../../data/BIRDS_5.txt
+[2025-11-16 03:27:04.526] [info]   Status: Solvable
+[2025-11-16 03:27:04.527] [info]   Column height (N): 10
+[2025-11-16 03:27:04.528] [info]   Columns processed: 13
+[2025-11-16 03:27:04.529] [info]   Result: VALID
+[2025-11-16 03:27:04.530] [info] 
+[2025-11-16 03:27:04.531] [info] Processing file: ../../data/BIRDS_6.txt
+[2025-11-16 03:27:04.532] [info]   Status: Solvable
+[2025-11-16 03:27:04.533] [info]   Column height (N): 12
+[2025-11-16 03:27:04.534] [info]   Columns processed: 15
+[2025-11-16 03:27:04.535] [info]   Result: VALID
+[2025-11-16 03:27:04.536] [info] 
+[2025-11-16 03:27:04.537] [info] Processing file: ../../data/BIRDS_7.txt
+[2025-11-16 03:27:04.538] [info]   Status: Solvable
+[2025-11-16 03:27:04.539] [info]   Column height (N): 14
+[2025-11-16 03:27:04.540] [info]   Columns processed: 17
+[2025-11-16 03:27:04.541] [info]   Result: VALID
 [2025-11-16 03:27:04.542] [info] 
-[2025-11-16 03:27:04.543] [info] Processing file: ../data/BIRDS_9.txt
+[2025-11-16 03:27:04.543] [info] Processing file: ../../data/BIRDS_8.txt
 [2025-11-16 03:27:04.544] [error]   Status: Unsolvable
-[2025-11-16 03:27:04.545] [error]   Reason: Letter 'D' appears 27 times, which is not divisible by N=14.
+[2025-11-16 03:27:04.545] [error]   Reason: Letter 'C' appears 25 times, which is not divisible by N=12.
 [2025-11-16 03:27:04.546] [info] 
-[2025-11-16 03:27:04.547] [info] Processing file: ../data/BIRDS_10.txt
-[2025-11-16 03:27:04.548] [error]   Status: Invalid input
-[2025-11-16 03:27:04.549] [error]   Reason: Column height mismatch: expected 130, found column of size 129.
+[2025-11-16 03:27:04.547] [info] Processing file: ../../data/BIRDS_9.txt
+[2025-11-16 03:27:04.548] [error]   Status: Unsolvable
+[2025-11-16 03:27:04.549] [error]   Reason: Letter 'D' appears 27 times, which is not divisible by N=14.
 [2025-11-16 03:27:04.550] [info] 
-[2025-11-16 03:27:04.551] [info] Processing file: ../data/BIRDS_11.txt
-[2025-11-16 03:27:04.552] [info]   Status: Solvable
-[2025-11-16 03:27:04.553] [info]   Column height (N): 130
-[2025-11-16 03:27:04.554] [info]   Columns processed: 523
-[2025-11-16 03:27:04.555] [info]   Result: VALID
-[2025-11-16 03:27:04.556] [info] 
-[2025-11-16 03:27:04.557] [info] Processing file: ../data/BIRDS_12.txt
-[2025-11-16 03:27:04.558] [error]   Status: Unsolvable
-[2025-11-16 03:27:04.559] [error]   Reason: Letter 'A' appears 33801 times, which is not divisible by N=130.
+[2025-11-16 03:27:04.551] [info] Processing file: ../../data/BIRDS_10.txt
+[2025-11-16 03:27:04.552] [error]   Status: Invalid input
+[2025-11-16 03:27:04.553] [error]   Reason: Column height mismatch: expected 130, found column of size 129.
+[2025-11-16 03:27:04.554] [info] 
+[2025-11-16 03:27:04.555] [info] Processing file: ../../data/BIRDS_11.txt
+[2025-11-16 03:27:04.556] [info]   Status: Solvable
+[2025-11-16 03:27:04.557] [info]   Column height (N): 130
+[2025-11-16 03:27:04.558] [info]   Columns processed: 523
+[2025-11-16 03:27:04.559] [info]   Result: VALID
 [2025-11-16 03:27:04.560] [info] 
-[2025-11-16 03:27:04.561] [info] Processing file: ../data/BIRDS_13.txt
-[2025-11-16 03:27:04.562] [info]   Status: Solvable
-[2025-11-16 03:27:04.563] [info]   Column height (N): 130
-[2025-11-16 03:27:04.564] [info]   Columns processed: 523
-[2025-11-16 03:27:04.565] [info]   Result: VALID
-[2025-11-16 03:27:04.566] [info] 
-[2025-11-16 03:27:04.567] [info] Execution finished.
+[2025-11-16 03:27:04.561] [info] Processing file: ../../data/BIRDS_12.txt
+[2025-11-16 03:27:04.562] [error]   Status: Unsolvable
+[2025-11-16 03:27:04.563] [error]   Reason: Letter 'A' appears 33801 times, which is not divisible by N=130.
+[2025-11-16 03:27:04.564] [info] 
+[2025-11-16 03:27:04.565] [info] Processing file: ../../data/BIRDS_13.txt
+[2025-11-16 03:27:04.566] [info]   Status: Solvable
+[2025-11-16 03:27:04.567] [info]   Column height (N): 130
+[2025-11-16 03:27:04.568] [info]   Columns processed: 523
+[2025-11-16 03:27:04.569] [info]   Result: VALID
+[2025-11-16 03:27:04.570] [info] 
+[2025-11-16 03:27:04.571] [info] Execution finished.

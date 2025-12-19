@@ -194,7 +194,7 @@ bool process_file(const string &filename, ostream &log, int& time_counter) {
 }
 
 int main(){
-    ofstream log("../data/checker_result/checker_result.log");
+    ofstream log("../../data/checker_result/checker_result.log");
     if(!log.is_open()){ cerr << "Cannot open results.log\n"; return 1; }
 
     int time_counter = 0;
@@ -205,18 +205,20 @@ int main(){
     log_entry(log, time_counter, "info", "Starting Strict ORDER Check");
     log_entry(log, time_counter, "info", "");
     
-    process_file("../data/BIRDS__1.txt", log, time_counter);
-    process_file("../data/BIRDS__2.txt", log, time_counter);
-    process_file("../data/BIRDS__3.txt", log, time_counter);
-    process_file("../data/BIRDS__5.txt", log, time_counter);
-    process_file("../data/BIRDS__6.txt", log, time_counter);
+    process_file("../../data/BIRDS__1.txt", log, time_counter);
+    process_file("../../data/BIRDS__2.txt", log, time_counter);
+    process_file("../../data/BIRDS__3.txt", log, time_counter);
+    process_file("../../data/BIRDS__5.txt", log, time_counter);
+    process_file("../../data/BIRDS__6.txt", log, time_counter);
+    process_file("../../data/BIRDS_LARGE.txt", log, time_counter);
+
 
     log_entry(log, time_counter, "info", "");
     log_entry(log, time_counter, "info", "Starting Solvability Check (BIRDS_3.txt to BIRDS_13.txt)");
     log_entry(log, time_counter, "info", "");
     
     for(int i = 3; i <= 13; i++){
-        string fname = "../data/BIRDS_" + to_string(i) + ".txt";
+        string fname = "../../data/BIRDS_" + to_string(i) + ".txt";
         process_file(fname, log, time_counter);
     }
     
